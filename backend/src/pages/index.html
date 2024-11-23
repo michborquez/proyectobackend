@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Documentación API</h1>
+            <p>Explorar los endpoints disponibles en el sistema</p>
+        </header>
+
+        <div class="grid-container">
+            <div class="card">
+                <div class="card-header">Categorías</div>
+                <div class="card-body">
+                    <ul class="route-list">
+                        <li class="route-item">
+                            <span class="method get">GET</span>
+                            <span class="route-path">/api/categorias</span>
+                        </li>
+                        <li class="route-item">
+                            <span class="method get">GET</span>
+                            <span class="route-path">/api/categorias/:id</span>
+                        </li>
+                        <li class="route-item">
+                            <span class="method post">POST</span>
+                            <span class="route-path">/api/categorias</span>
+                        </li>
+                        <li class="route-item">
+                            <span class="method put">PUT</span>
+                            <span class="route-path">/api/categorias/:id</span>
+                        </li>
+                        <li class="route-item">
+                            <span class="method delete">DELETE</span>
+                            <span class="route-path">/api/categorias/:id</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Productos</div>
+                <div class="card-body">
+                    <ul class="route-list">
+                        <li class="route-item">
+                            <span class="method get">GET</span>
+                            <span class="route-path">/api/productos</span>
+                        </li>
+                        <li class="route-item">
+                            <span class="method post">POST</span>
+                            <span class="route-path">/api/productos</span>
+                        </li>
+                        <li class="route-item">
+                            <span class="method put">PUT</span>
+                            <span class="route-path">/api/productos/:id</span>
+                        </li>
+                        <li class="route-item">
+                            <span class="method delete">DELETE</span>
+                            <span class="route-path">/api/productos/:id</span>
+                        </li>
+                        <li class="route-item">
+                            <span class="method get">GET</span>
+                            <span class="route-path">/api/productos/categoria/:categoria_id</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Usuarios</div>
+                <div class="card-body">
+                    <ul class="route-list">
+                        <li class="route-item">
+                            <span class="method post">POST</span>
+                            <span class="route-path">/api/usuarios</span>
+                        </li>
+                        <li class="route-item">
+                            <span class="method post">POST</span>
+                            <span class="route-path">/api/usuarios/login</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Reviews</div>
+                <div class="card-body">
+                    <ul class="route-list">
+                        <li class="route-item">
+                            <span class="method get">GET</span>
+                            <span class="route-path">/api/productos/:producto_id/reviews</span>
+                        </li>
+                        <li class="route-item">
+                            <span class="method post">POST</span>
+                            <span class="route-path">/api/productos/:producto_id/reviews</span>
+                        </li>
+                        <li class="route-item">
+                            <span class="method put">PUT</span>
+                            <span class="route-path">/api/reviews/:id</span>
+                        </li>
+                        <li class="route-item">
+                            <span class="method delete">DELETE</span>
+                            <span class="route-path">/api/reviews/:id</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Pedidos</div>
+                <div class="card-body">
+                    <ul class="route-list">
+                        <li class="route-item">
+                            <span class="method get">GET</span>
+                            <span class="route-path">/api/pedidos</span>
+                        </li>
+                        <li class="route-item">
+                            <span class="method get">GET</span>
+                            <span class="route-path">/api/pedidos/:id</span>
+                        </li>
+                        <li class="route-item">
+                            <span class="method post">POST</span>
+                            <span class="route-path">/api/pedidos</span>
+                        </li>
+                        <li class="route-item">
+                            <span class="method delete">DELETE</span>
+                            <span class="route-path">/api/pedidos/:id</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Detalles de Pedido</div>
+                <div class="card-body">
+                    <ul class="route-list">
+                        <li class="route-item">
+                            <span class="method get">GET</span>
+                            <span class="route-path">/api/pedidos/:pedido_id/detalles</span>
+                        </li>
+                        <li class="route-item">
+                            <span class="method post">POST</span>
+                            <span class="route-path">/api/pedidos/:pedido_id/detalles</span>
+                        </li>
+                        <li class="route-item">
+                            <span class="method put">PUT</span>
+                            <span class="route-path">/api/detalles/:id</span>
+                        </li>
+                        <li class="route-item">
+                            <span class="method delete">DELETE</span>
+                            <span class="route-path">/api/detalles/:id</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
